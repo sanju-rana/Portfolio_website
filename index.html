@@ -1,0 +1,382 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sanju Rana | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio website of Sanju Rana - Computer Science Engineering Student, Web Developer, and Java Programmer."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress">
+    <div class="scroll-progress__bar"></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor cursor--dot"></div>
+  <div class="cursor cursor--outline"></div>
+
+  <!-- Subtle particle background -->
+  <div class="particles" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Sanju Rana</a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero reveal" id="home">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Sanju Rana</h1>
+          <p class="hero__title">
+            <span class="hero__typing" data-phrases='["Computer Science Engineering Student", "Web Developer", "Java Programmer", "Problem Solver"]'></span>
+          </p>
+          <p class="hero__description">
+            Results-driven 3rd-year B.Tech Computer Science student at IIIT Vadodara, passionate about
+            building responsive web applications, integrating APIs, and creating user-friendly digital
+            experiences.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+          <div class="hero__socials">
+            <a
+              href="https://www.linkedin.com/in/sanju-rana-72b342291/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              class="social-link"
+            >
+              <span class="social-icon">in</span>
+            </a>
+            <a
+              href="https://github.com/sanju-rana"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              class="social-link"
+            >
+              <span class="social-icon">&#60;/&#62;</span>
+            </a>
+            <a href="mailto:sanju710589@gmail.com" aria-label="Email" class="social-link">
+              <span class="social-icon">@</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__orb hero__orb--primary"></div>
+          <div class="hero__orb hero__orb--secondary"></div>
+
+          <div class="hero__photo-wrapper">
+            <img src="profilephoto.jpeg" alt="Sanju Rana" class="hero__photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Education Section -->
+    <section class="section reveal" id="education">
+      <div class="container">
+        <h2 class="section__title">Education</h2>
+        <div class="education timeline">
+          <div class="timeline__line"></div>
+          <article class="education__item glass-card">
+            <div class="timeline-card__dot"></div>
+            <h3 class="education__institution">Indian Institute of Information Technology Vadodara</h3>
+            <p class="education__degree">B.Tech in Computer Science Engineering</p>
+            <span class="education__year">Aug 2023 – Present</span>
+          </article>
+
+          <article class="education__item glass-card">
+            <div class="timeline-card__dot"></div>
+            <h3 class="education__institution">P.P.S.V.M Inter College, Nanakmatta</h3>
+            <p class="education__degree">Class XII – Physics, Chemistry, Mathematics</p>
+            <span class="education__year">June 2022</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section reveal" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills">
+          <div class="skills__group glass-card">
+            <h3 class="skills__title">Programming Languages</h3>
+            <div class="skills__bars">
+              <div class="skill">
+                <div class="skill__header">
+                  <span>Java</span><span class="skill__percent">90%</span>
+                </div>
+                <div class="skill__bar"><span data-level="90"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span>C/C++</span><span class="skill__percent">85%</span>
+                </div>
+                <div class="skill__bar"><span data-level="85"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span>Python</span><span class="skill__percent">75%</span>
+                </div>
+                <div class="skill__bar"><span data-level="75"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span>SQL</span><span class="skill__percent">80%</span>
+                </div>
+                <div class="skill__bar"><span data-level="80"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span>Dart</span><span class="skill__percent">70%</span>
+                </div>
+                <div class="skill__bar"><span data-level="70"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__group glass-card">
+            <h3 class="skills__title">Web Development</h3>
+            <div class="skills__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive UI</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skills__group glass-card">
+            <h3 class="skills__title">Frameworks & Tools</h3>
+            <div class="skills__tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">RapidAPI</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+
+          <div class="skills__group glass-card">
+            <h3 class="skills__title">Core Computer Science</h3>
+            <div class="skills__tags">
+              <span class="tag">DBMS</span>
+              <span class="tag">Object-Oriented Programming</span>
+              <span class="tag">Operating Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section--alt reveal" id="experience">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline__line"></div>
+          <article class="timeline-card glass-card">
+            <div class="timeline-card__dot"></div>
+            <div class="timeline-card__header">
+              <div>
+                <h3 class="timeline-card__company">CODEXINTERN</h3>
+                <p class="timeline-card__role">Web Development Intern</p>
+              </div>
+              <span class="timeline-card__duration">July 2025 – August 2025</span>
+            </div>
+            <ul class="timeline-card__list">
+              <li>Developed a Spotify Track Info web application using HTML, CSS, and JavaScript.</li>
+              <li>Integrated Spotify data via RapidAPI to display real-time song details.</li>
+              <li>Built a responsive user interface ensuring cross-device compatibility.</li>
+              <li>Implemented an authentication login page with client-side form validation.</li>
+              <li>Improved UI responsiveness, error handling, and overall user experience.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section reveal" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects">
+          <article class="project-card glass-card">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Spotify Track Info Web App</h3>
+              <p class="project-card__description">
+                Web app that fetches real-time Spotify track information using RapidAPI and displays dynamic
+                song details in a responsive UI.
+              </p>
+              <div class="project-card__tech">
+                <span class="tag tag--small">HTML</span>
+                <span class="tag tag--small">CSS</span>
+                <span class="tag tag--small">JavaScript</span>
+                <span class="tag tag--small">RapidAPI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Yoga Application</h3>
+              <p class="project-card__description">
+                Mobile application UI built using Flutter and Dart featuring an activity tracker, REST API
+                integration, and Figma-to-code UI conversion.
+              </p>
+              <div class="project-card__tech">
+                <span class="tag tag--small">Flutter</span>
+                <span class="tag tag--small">Dart</span>
+                <span class="tag tag--small">REST APIs</span>
+                <span class="tag tag--small">Figma</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Portfolio Gallery</h3>
+              <p class="project-card__description">
+                Responsive image gallery with clean layout, hover effects, and mobile-friendly design built
+                using semantic HTML and modern CSS.
+              </p>
+              <div class="project-card__tech">
+                <span class="tag tag--small">HTML</span>
+                <span class="tag tag--small">CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Smart Email Assistant</h3>
+              <p class="project-card__description">
+                Smart email reply generator with a Spring Boot backend, REST API endpoints, and a simple
+                HTML/CSS interface for user input and responses.
+              </p>
+              <div class="project-card__tech">
+                <span class="tag tag--small">Spring Boot</span>
+                <span class="tag tag--small">REST APIs</span>
+                <span class="tag tag--small">HTML</span>
+                <span class="tag tag--small">CSS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section--alt reveal" id="achievements">
+      <div class="container">
+        <h2 class="section__title">Achievements</h2>
+        <div class="achievements">
+          <article class="achievement-card glass-card">
+            <h3 class="achievement-card__title">
+              AWS APAC Solutions Architecture Virtual Experience Program – Forage
+            </h3>
+            <p class="achievement-card__description">
+              Completed a virtual experience program focused on designing scalable, reliable cloud solutions
+              following AWS best practices.
+            </p>
+          </article>
+          <article class="achievement-card glass-card">
+            <h3 class="achievement-card__title">Odoo Hackathon 2025 – Certificate of Participation</h3>
+            <p class="achievement-card__description">
+              Participated in a collaborative hackathon, contributing to problem-solving, feature ideation,
+              and rapid prototyping of product features.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section reveal" id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact">
+          <div class="contact__info">
+            <p><strong>Email:</strong> <a href="mailto:sanju710589@gmail.com">sanju710589@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919027210589">+91 9027210589</a></p>
+            <div class="contact__icons">
+             
+            </div>
+          </div>
+
+          <form class="contact__form" id="contact-form">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-glow">Send Message</button>
+            <p class="form__status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <span>↑</span>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© Sanju Rana</p>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/in/sanju-rana-72b342291/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/sanju-rana" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

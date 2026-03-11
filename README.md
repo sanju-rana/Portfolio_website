@@ -27,7 +27,7 @@ script.js
 
 ## Live Demo
 
-https://portfolio-website-521840a9a-tanushree-jatias-projects.vercel.app
+https://portfolio-website-one-xi-69.vercel.app/
 
 You can also view the site locally by opening `index.html` in a browser.
 
